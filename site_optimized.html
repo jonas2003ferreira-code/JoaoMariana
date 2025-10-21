@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<!-- Meta Tags -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Discover unforgettable local experiences with passionate guides. Book your adventure today!" name="description"/>
+<meta content="Local Adventures for Young Travelers" property="og:title"/>
+<meta content="Authentic experiences for international explorers aged 18–30." property="og:description"/>
+<title>Local Adventures</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; } body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; } header { position: sticky; top: 0; background: #fff; padding: 1rem 2rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); z-index: 1000; display: flex; justify-content: space-between; align-items: center; } header h1 { font-size: 1.5rem; } nav a { margin-left: 1rem; text-decoration: none; color: #0077cc; font-weight: bold; } .hero { background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat; color: white; padding: 4rem 2rem; text-align: center; } .hero h2 { font-size: 2.5rem; margin-bottom: 1rem; } .hero p { font-size: 1.2rem; } .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; padding: 2rem; } .card { border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background: #fff; transition: transform 0.3s ease; } .card:hover { transform: scale(1.03); } .card img { width: 100%; height: 180px; object-fit: cover; } .card-content { padding: 1rem; } .card-content h3 { margin-bottom: 0.5rem; } .card-content p { margin-bottom: 1rem; } .card-content button { background: #0077cc; color: white; border: none; padding: 0.5rem 1rem; cursor: pointer; border-radius: 4px; } .quiz { padding: 2rem; background: #f9f9f9; } .quiz h3 { margin-bottom: 1rem; } .quiz label { display: block; margin: 0.5rem 0; } .quiz button { margin-top: 1rem; background: #28a745; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; } .map { padding: 2rem; } .map iframe { width: 100%; height: 300px; border: none; } .ugc { padding: 2rem; background: #eef; } .ugc h3 { margin-bottom: 1rem; } .ugc textarea { width: 100%; height: 100px; margin-bottom: 1rem; } .ugc button { background: #0077cc; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; } .gallery { padding: 2rem; background: #fafafa; } .gallery h3 { margin-bottom: 1rem; text-align: center; } .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; } .gallery-grid img { width: 100%; height: 120px; object-fit: cover; border-radius: 6px; } footer { text-align: center; padding: 1rem; background: #333; color: white; }</style>
+</head>
+<body>
+<header>
+<h1>Local Adventures</h1>
+<nav>
+      #Experiences
+      #Quiz
+      #Map
+      #Activities
+</nav>
+</header>
+<section class="hero">
+<h2>Live the Adventure. Locally.</h2>
+<p>Join unforgettable experiences guided by passionate locals.</p>
+</section>
+<!-- Experiences Section -->
+<section class="cards" id="experiences">
+<!-- Original 4 -->
+<div class="card">
+<img alt="Surf the Coast&gt;
+      &lt;div class=" card-content"="" loading="lazy" src="sea-person-beach-416676.jpg"/>
+<h3>Surf the Coast</h3>
+<p>Catch waves with expert instructors in stunning beach locations.</p>
+<button>Book Now</button>
+</div>
+
+<div class="card">
+<img alt="Local Cooking Class&gt;
+      &lt;div class=" card-content"="" loading="lazy" src="local-cooking-class.jpg"/>
+<h3>Local Cooking Class</h3>
+<p>Learn traditional recipes from local chefs using fresh ingredients.</p>
+<button>Join Today</button>
+</div>
+
+<div class="card">
+<img alt="Mountain Hike&gt;
+      &lt;div class=" card-content"="" loading="lazy" src="mountaineers-.jpg"/>
+<h3>Mountain Hike</h3>
+<p>Explore scenic trails and breathtaking views with experienced guides.</p>
+<button>Explore</button>
+</div>
+
+<div class="card">
+<img alt="Culture Walk&gt;
+      &lt;div class=" card-content"="" loading="lazy" src="landscape-mountains-fashion-.jpg"/>
+<h3>Culture Walk</h3>
+<p>Discover hidden gems and local stories on a guided city walk.</p>
+<button>Discover</button>
+</div>
+
+<!-- New Experiences -->
+<div class="card">
+<img alt="Wine Tasting&gt;
+      &lt;div class=" card-content"="" loading="lazy" src="R.jpg"/>
+<h3>Wine Tasting</h3>
+<p>Savor local wines and learn from expert sommeliers in scenic vineyards.</p>
+<button>Taste Now</button>
+</div>
+
+<div class="card">
+<img alt="Bike Tour&gt;
+      &lt;div class=" card-content"="" loading="lazy" src="bike-on-valley-trail-whistler.jpg"/>
+<h3>Bike Tour</h3>
+<p>Ride through picturesque landscapes and hidden trails with local guides.</p>
+<button>Ride With Us</button>
+</div>
+
+<div class="card">
+<img alt="Sunset Cruise&gt;
+      &lt;div class=" card-content"="" loading="lazy" src="b2.jpg"/>
+<h3>Sunset Cruise</h3>
+<p>Relax on a boat and enjoy breathtaking sunsets over the ocean.</p>
+<button>Book Cruise</button>
+</div>
+
+</section>
+<!-- Quiz -->
+<section class="quiz" id="quiz">
+<h3>Find Your Perfect Experience</h3>
+<form id="quizForm">
+<label><input name="activity" type="radio" value="Adventure"/> I love adrenaline!</label>
+<label><input name="activity" type="radio" value="Culture"/> I enjoy cultural immersion.</label>
+<label><input name="activity" type="radio" value="Relaxation"/> I prefer relaxing activities.</label>
+<button onclick="showResult()" type="button">See Recommendation</button>
+</form>
+<p id="quizResult"></p>
+</section>
+<!-- Map -->
+<section aria-label="Map location" class="map">
+<h2>Find Us Here</h2>
+<iframe allowfullscreen="" loading="lazy" src="https://www.google.com/maps/embed?..." title="Map showing location in Lisbon"></iframe>
+</section>
+<!-- UGC -->
+<section class="ugc" id="ugc">
+<h3>Share Your Experience</h3>
+<textarea placeholder="Tell us about your adventure..."></textarea>
+<button onclick="alert('Thanks for sharing!')">Submit</button>
+</section>
+<!-- Gallery -->
+<section class="gallery">
+<h3>Photo Highlights</h3>
+<div class="gallery-grid">
+<img <="" div="" loading="lazy" src="ORANGES.jpg"/>
+</div></section>
+<footer>
+    © 2025 Local Adventures. All rights reserved.
+  </footer>
+<script>function showResult() { const selected = document.querySelector('input[name="activity"]:checked'); const result = document.getElementById('quizResult'); if (selected) { result.textContent = `We recommend: ${selected.value} experiences!`; } else { result.textContent = 'Please select an option.'; } }</script>
+<!-- Cookie Consent Banner -->
+<div id="cookie-consent-banner" style="position:fixed;bottom:0;width:100%;background:#f8f8f8;padding:10px;text-align:center;box-shadow:0 -2px 5px rgba(0,0,0,0.1);">
+<span>This site uses cookies for analytics. Do you accept?</span>
+<button onclick="acceptCookies()">Accept</button>
+</div>
+<script>function acceptCookies() { // Hide the banner document.getElementById('cookie-consent-banner').style.display = 'none'; // Save consent in localStorage localStorage.setItem('cookieConsent', 'true'); // Load analytics script loadAnalytics(); } function loadAnalytics() { // Example: Plausible Analytics (privacy-friendly) const script = document.createElement('script'); script.src = 'https://plausible.io/js/plausible.js'; script.defer = true; script.setAttribute('data-domain', 'yourdomain.com'); // Replace with your actual domain document.head.appendChild(script); } // Check for prior consent if (localStorage.getItem('cookieConsent') === 'true') { loadAnalytics(); }</script>
+<!-- 
+Instructions:
+- Replace 'yourdomain.com' with your actual domain name.
+- For Matomo, use their privacy-mode script instead of Plausible.
+- This setup ensures analytics only load after user consent.
+-->
+</body>
+</html>
